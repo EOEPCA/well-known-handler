@@ -5,8 +5,8 @@ python: 3.6.9
 jobs:
   include:
     - stage: Testing
-      install: pip install -r EndpointLookup/requirements.txt
-      script: true #pytest EndpointLookup/tests
+      install: pip install -r WellKnownHandler/requirements.txt
+      script: true #pytest WellKnownHandler/tests
 
 deploy:
   provider: pypi
