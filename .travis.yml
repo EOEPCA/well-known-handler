@@ -1,11 +1,12 @@
 language: python
 python: 3.6.9
 
-jobs:
-  include:
-    - stage: Testing
-      install: pip install -r PyLibraryTemplate/requirements.txt
-      script: pytest PyLibraryTemplate/tests
+# TODO: Testing
+#jobs:
+#  include:
+#    - stage: Testing
+#      install: pip install -r EndpointLookup/requirements.txt
+#      script: pytest EndpointLookup/tests
 
 deploy:
   provider: pypi

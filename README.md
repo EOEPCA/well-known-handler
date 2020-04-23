@@ -1,7 +1,7 @@
 <!--
 ***
 *** To avoid retyping too much info. Do a search and replace for the following:
-*** um-pylibrary-template, PyLibraryTemplate
+*** endpoint-lookup, EndpointLookup
 -->
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
@@ -13,25 +13,23 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/EOEPCA/um-pylibrary-template">
+  <a href="https://github.com/EOEPCA/endpoint-lookup">
   </a>
 
-  <h3 align="center">PyLibraryTemplate</h3>
+  <h3 align="center">EndpointLookup</h3>
 
   <p align="center">
     Template for developing an EOEPCA Library
     <br />
-    <a href="https://github.com/EOEPCA/um-pylibrary-template"><strong>Explore the docs</strong></a>
+    <a href="https://github.com/EOEPCA/endpoint-lookup"><strong>Explore the docs</strong></a>
     .
-    <a href="https://github.com/EOEPCA/um-pylibrary-template/issues">Report Bug</a>
+    <a href="https://github.com/EOEPCA/endpoint-lookup/issues">Report Bug</a>
     ·
-    <a href="https://github.com/EOEPCA/um-pylibrary-template/issues">Request Feature</a>
+    <a href="https://github.com/EOEPCA/endpoint-lookup/issues">Request Feature</a>
   </p>
 </p>
 
 ## Setup this template!
-- Edit setup.py to fit your repository
-- Replace code and requirements.txt in src by your own! Make sure to use pytest, or replace it in the .travis.yml to use the correct testing suite 
 - Generate a new token in PyPi account exclusively for this library
 
 - setup the following variables (in travis webpage, for this project) to ensure travis automated CI works (https://travis-ci.com/github/EOEPCA/<project>/settings):
@@ -86,22 +84,22 @@ This is an example of how to list things you need to use the software and how to
 Just download the library using pip
 
 ```sh
-pip install PyLibraryTemplate
+pip install EndpointLookup
 ```
 
 ### Testing
 
 ```sh
-pytest PyLibraryTemplate/tests
+pytest EndpointLookup/tests
 ```
 
 ## Documentation & Usage
 
-The component documentation can be found at https://eoepca.github.io/um-pylibrary-template/.
+The component documentation can be found at https://eoepca.github.io/endpoint-lookup/.
 
 ## Roadmap
 
-See the [open issues](https://github.com/EOEPCA/um-pylibrary-template/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/EOEPCA/endpoint-lookup/issues) for a list of proposed features (and known issues).
 
 ## Contributing
 
@@ -121,21 +119,21 @@ Distributed under the Apache-2.0 License. See `LICENSE` for more information.
 
 [EOEPCA mailbox](eoepca.systemteam@telespazio.com)
 
-Project Link: [https://github.com/EOEPCA/um-pylibrary-template](https://github.com/EOEPCA/um-pylibrary-template)
+Project Link: [https://github.com/EOEPCA/endpoint-lookup](https://github.com/EOEPCA/endpoint-lookup)
 
 ## Acknowledgements
 
 - README.md is based on [this template](https://github.com/othneildrew/Best-README-Template) by [Othneil Drew](https://github.com/othneildrew).
 
 
-[contributors-shield]: https://img.shields.io/github/contributors/EOEPCA/um-pylibrary-template.svg?style=flat-square
-[contributors-url]: https://github.com/EOEPCA/um-pylibrary-template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/EOEPCA/um-pylibrary-template.svg?style=flat-square
-[forks-url]: https://github.com/EOEPCA/um-pylibrary-template/network/members
-[stars-shield]: https://img.shields.io/github/stars/EOEPCA/um-pylibrary-template.svg?style=flat-square
-[stars-url]: https://github.com/EOEPCA/um-pylibrary-template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/EOEPCA/um-pylibrary-template.svg?style=flat-square
-[issues-url]: https://github.com/EOEPCA/um-pylibrary-template/issues
-[license-shield]: https://img.shields.io/github/license/EOEPCA/um-pylibrary-template.svg?style=flat-square
-[license-url]: https://github.com/EOEPCA/um-pylibrary-template/blob/master/LICENSE
-[build-shield]: https://www.travis-ci.com/EOEPCA/um-pylibrary-template.svg?branch=master
+[contributors-shield]: https://img.shields.io/github/contributors/EOEPCA/endpoint-lookup.svg?style=flat-square
+[contributors-url]: https://github.com/EOEPCA/endpoint-lookup/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/EOEPCA/endpoint-lookup.svg?style=flat-square
+[forks-url]: https://github.com/EOEPCA/endpoint-lookup/network/members
+[stars-shield]: https://img.shields.io/github/stars/EOEPCA/endpoint-lookup.svg?style=flat-square
+[stars-url]: https://github.com/EOEPCA/endpoint-lookup/stargazers
+[issues-shield]: https://img.shields.io/github/issues/EOEPCA/endpoint-lookup.svg?style=flat-square
+[issues-url]: https://github.com/EOEPCA/endpoint-lookup/issues
+[license-shield]: https://img.shields.io/github/license/EOEPCA/endpoint-lookup.svg?style=flat-square
+[license-url]: https://github.com/EOEPCA/endpoint-lookup/blob/master/LICENSE
+[build-shield]: https://www.travis-ci.com/EOEPCA/endpoint-lookup.svg?branch=master
