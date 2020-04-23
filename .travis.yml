@@ -1,12 +1,12 @@
-#language: python
-#python: 3.6.9
+language: python
+python: 3.6.9
 
 # TODO: Testing
-#jobs:
-#  include:
-#    - stage: Testing
-#      install: pip install -r EndpointLookup/requirements.txt
-#      script: pytest EndpointLookup/tests
+jobs:
+  include:
+    - stage: Testing
+      install: pip install -r EndpointLookup/requirements.txt
+      script: true #pytest EndpointLookup/tests
 
 deploy:
   provider: pypi
