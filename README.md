@@ -76,7 +76,7 @@ pytest WellKnownHandler/tests
 
 ## Usage
 
-Checkout our [main.py])(https://github.com/github/WellKnownHandler/blob/master/WellKnownHandler/main.py) file for some examples of usage!
+Checkout our [main.py](https://github.com/github/WellKnownHandler/blob/master/WellKnownHandler/main.py) file for some examples of usage!
 
 ## Roadmap
 
