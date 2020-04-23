@@ -1,5 +1,5 @@
-language: python
-python: 3.6.9
+#language: python
+#python: 3.6.9
 
 # TODO: Testing
 #jobs:
