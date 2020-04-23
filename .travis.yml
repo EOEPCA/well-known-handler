@@ -1,0 +1,26 @@
+language: python
+python: 3.6.9
+
+jobs:
+  include:
+    - stage: Testing
+      install: pip install -r PyLibraryTemplate/requirements.txt
+      script: pytest PyLibraryTemplate/tests
+
+deploy:
+  provider: pypi
+  user: "__token__"
+  password: $TOKEN_PYPI
+  on:
+    all_branches: true
+    tags: true
+  skip_existing: true
+
+#notifications:
+#  slack: eoepca:Msk9hjQKAbwSYcVWiepenPim
+#  email:
+#    recipients:
+#      - a.person@acme.com
+#      - a.n.other@acme.com
+#    on_success: never # default: change
+#    on_failure: never # default: always
