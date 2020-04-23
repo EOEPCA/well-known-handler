@@ -1,7 +1,7 @@
 <!--
 ***
 *** To avoid retyping too much info. Do a search and replace for the following:
-*** endpoint-lookup, EndpointLookup
+*** well-known-handler, WellKnownHandler
 -->
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
@@ -13,19 +13,17 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/EOEPCA/endpoint-lookup">
+  <a href="https://github.com/EOEPCA/well-known-handler">
   </a>
 
-  <h3 align="center">EndpointLookup</h3>
+  <h3 align="center">WellKnownHandler</h3>
 
   <p align="center">
-    Template for developing an EOEPCA Library
+    Auxiliary Python3 library that allows for simple parsing and usage of an SSO server's "well-known" endpoints
     <br />
-    <a href="https://github.com/EOEPCA/endpoint-lookup"><strong>Explore the docs</strong></a>
-    .
-    <a href="https://github.com/EOEPCA/endpoint-lookup/issues">Report Bug</a>
+    <a href="https://github.com/EOEPCA/well-known-handler/issues">Report Bug</a>
     ·
-    <a href="https://github.com/EOEPCA/endpoint-lookup/issues">Request Feature</a>
+    <a href="https://github.com/EOEPCA/well-known-handler/issues">Request Feature</a>
   </p>
 </p>
 
@@ -55,10 +53,6 @@
 - [YAML](https://yaml.org/)
 - [Travis CI](https://travis-ci.com/)
 
-## Getting Started
-
-To get a local copy up and running follow these simple steps.
-
 ### Prerequisites
 
 This is an example of how to list things you need to use the software and how to install them.
@@ -71,22 +65,22 @@ This is an example of how to list things you need to use the software and how to
 Just download the library using pip
 
 ```sh
-pip install EndpointLookup
+pip install WellKnownHandler
 ```
 
 ### Testing
 
 ```sh
-pytest EndpointLookup/tests
+pytest WellKnownHandler/tests
 ```
 
-## Documentation & Usage
+## Usage
 
-The component documentation can be found at https://eoepca.github.io/endpoint-lookup/.
+Checkout our [main.py])(https://github.com/github/WellKnownHandler/blob/master/WellKnownHandler/main.py) file for some examples of usage!
 
 ## Roadmap
 
-See the [open issues](https://github.com/EOEPCA/endpoint-lookup/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/EOEPCA/well-known-handler/issues) for a list of proposed features (and known issues).
 
 ## Contributing
 
@@ -106,21 +100,21 @@ Distributed under the Apache-2.0 License. See `LICENSE` for more information.
 
 [EOEPCA mailbox](eoepca.systemteam@telespazio.com)
 
-Project Link: [https://github.com/EOEPCA/endpoint-lookup](https://github.com/EOEPCA/endpoint-lookup)
+Project Link: [https://github.com/EOEPCA/well-known-handler](https://github.com/EOEPCA/well-known-handler)
 
 ## Acknowledgements
 
 - README.md is based on [this template](https://github.com/othneildrew/Best-README-Template) by [Othneil Drew](https://github.com/othneildrew).
 
 
-[contributors-shield]: https://img.shields.io/github/contributors/EOEPCA/endpoint-lookup.svg?style=flat-square
-[contributors-url]: https://github.com/EOEPCA/endpoint-lookup/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/EOEPCA/endpoint-lookup.svg?style=flat-square
-[forks-url]: https://github.com/EOEPCA/endpoint-lookup/network/members
-[stars-shield]: https://img.shields.io/github/stars/EOEPCA/endpoint-lookup.svg?style=flat-square
-[stars-url]: https://github.com/EOEPCA/endpoint-lookup/stargazers
-[issues-shield]: https://img.shields.io/github/issues/EOEPCA/endpoint-lookup.svg?style=flat-square
-[issues-url]: https://github.com/EOEPCA/endpoint-lookup/issues
-[license-shield]: https://img.shields.io/github/license/EOEPCA/endpoint-lookup.svg?style=flat-square
-[license-url]: https://github.com/EOEPCA/endpoint-lookup/blob/master/LICENSE
-[build-shield]: https://www.travis-ci.com/EOEPCA/endpoint-lookup.svg?branch=master
+[contributors-shield]: https://img.shields.io/github/contributors/EOEPCA/well-known-handler.svg?style=flat-square
+[contributors-url]: https://github.com/EOEPCA/well-known-handler/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/EOEPCA/well-known-handler.svg?style=flat-square
+[forks-url]: https://github.com/EOEPCA/well-known-handler/network/members
+[stars-shield]: https://img.shields.io/github/stars/EOEPCA/well-known-handler.svg?style=flat-square
+[stars-url]: https://github.com/EOEPCA/well-known-handler/stargazers
+[issues-shield]: https://img.shields.io/github/issues/EOEPCA/well-known-handler.svg?style=flat-square
+[issues-url]: https://github.com/EOEPCA/well-known-handler/issues
+[license-shield]: https://img.shields.io/github/license/EOEPCA/well-known-handler.svg?style=flat-square
+[license-url]: https://github.com/EOEPCA/well-known-handler/blob/master/LICENSE
+[build-shield]: https://www.travis-ci.com/EOEPCA/well-known-handler.svg?branch=master
