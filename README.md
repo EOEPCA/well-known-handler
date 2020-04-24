@@ -29,15 +29,13 @@
 
 ## Table of Contents
 
-- [Setup this template!](#setup-this-template)
 - [Table of Contents](#table-of-contents)
 - [About The Project](#about-the-project)
   - [Built With](#built-with)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-  - [Testing](#testing)
-- [Documentation & Usage](#documentation--usage)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Testing](#testing)
+- [Usage](#usage)
 - [Roadmap](#roadmap)
 - [Contributing](#contributing)
 - [License](#license)
@@ -45,6 +43,13 @@
 - [Acknowledgements](#acknowledgements)
 
 ## About The Project
+
+Auxiliary Python3 library that allows for simple parsing and usage of an SSO server's "well-known" endpoints.
+This library is created to support EOEPCA's project, but is generic enough to be used in any other environment.
+
+Currently supported endpoints (easily expandable!):
+  - OIDC
+  - SCIM
 
 ### Built With
 
@@ -76,7 +81,7 @@ pytest WellKnownHandler/tests
 
 ## Usage
 
-Checkout our [main.py](https://github.com/github/WellKnownHandler/blob/master/WellKnownHandler/main.py) file for some examples of usage!
+Checkout our main.py file for some examples of usage!
 
 ## Roadmap
 

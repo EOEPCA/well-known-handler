@@ -4,12 +4,13 @@ from json import loads
 #### Internal constants
 _WELL_KNOWN_ENDPOINT = "/.well-known"
 _OIDC_ENDPOINT = "/openid-configuration"
+_SCIM_ENDPOINT = "/scim-configuration"
 
 
 ### Constants used externally
 ## Types
 TYPE_OIDC = _OIDC_ENDPOINT
-# TODO: Add more endpoints, like UMA
+TYPE_SCIM = _SCIM_ENDPOINT
 
 ## Keys
 # OIDC
@@ -20,6 +21,17 @@ KEY_OIDC_END_SESSION_ENDPOINT = "end_session_endpoint"
 KEY_OIDC_CLIENTINFO_ENDPOINT = "clientinfo_endpoint"
 KEY_OIDC_INTROSPECTION_ENDPOINT = "introspection_endpoint"
 KEY_OIDC_SUPPORTED_SCOPES = "scopes_supported"
+
+# SCIM
+KEY_SCIM_VERSION = "version"
+KEY_SCIM_SUPPORTED_AUTH = "authorization_supported"
+KEY_SCIM_USER_ENDPOINT = "user_endpoint"
+KEY_SCIM_GROUP_ENDPOINT = "group_endpoint"
+KEY_SCIM_BULK_ENDPOINT = "bulk_endpoint"
+KEY_SCIM_SERVICE_PROVIDER_ENDPOINT = "service_provider_endpoint"
+KEY_SCIM_RESOURCE_TYPES_ENDPOINT = "resource_types_endpoint"
+KEY_SCIM_FIDO_DEVICES_ENDPOINT = "fido_devices_endpoint"
+KEY_SCIM_SCHEMAS_ENDPOINT = "schemas_endpoint"
 
 class WellKnownHandler:
     """
@@ -37,10 +49,15 @@ class WellKnownHandler:
             import urllib3
             urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning) 
 
-        for ep in [_OIDC_ENDPOINT]:
+        for ep in [_OIDC_ENDPOINT, _SCIM_ENDPOINT]:
             retrieved = get(sso_url+_WELL_KNOWN_ENDPOINT+ep, verify=secure)
             if retrieved.text:
-                self.data[ep] = loads(retrieved.text)
+                tmp = loads(retrieved.text)
+                # SCIM information comes in an array with a single value, at least in the servers this was tested on
+                if ep == _SCIM_ENDPOINT:
+                    tmp = tmp[0]
+
+                self.data[ep] = tmp
             else:
                 raise Exception("Got no information from SSO. Returned ->" + retrieved.text + "--" + retrieved.reason)
 

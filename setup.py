@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
   name = 'WellKnownHandler',
-  version = '0.0.1',
+  version = '0.1.0',
   author = 'EOEPCA',
   author_email = 'angel.lozano@deimos-space.com',
   description = 'Auxiliary Python3 library that allows for simple parsing and usage of an SSO server\'s "well-known" endpoints',
