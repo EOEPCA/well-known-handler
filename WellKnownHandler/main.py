@@ -3,6 +3,7 @@
 import requests
 from WellKnownHandler import WellKnownHandler, TYPE_OIDC, KEY_OIDC_SUPPORTED_SCOPES
 from WellKnownHandler import TYPE_SCIM, KEY_SCIM_VERSION, KEY_SCIM_BULK_ENDPOINT
+from WellKnownHandler import TYPE_UMA_V2, KEY_UMA_V2_INTROSPECTION_ENDPOINT
 
 def main():
     # Replace:
@@ -11,15 +12,19 @@ def main():
     # Initialize
     h = WellKnownHandler(sso_url, secure=False) # USE 'secure=True' IN PRODUCTION, TO CHECK SSL CERTS!
     
-    # OIDC!
+    ### OIDC!
     print(h.get(TYPE_OIDC, KEY_OIDC_SUPPORTED_SCOPES))
     # Output: ['openid', ... ]
 
-    # Maybe you want to use SCIM?
+    ### Maybe you want to use SCIM?
     print(h.get(TYPE_SCIM, KEY_SCIM_VERSION))
     # Output: '2.0' (or your version)
     print(h.get(TYPE_SCIM, KEY_SCIM_BULK_ENDPOINT))
     # Output: 'https://<domain>/<path>/Bulk'
+
+    ### UMA 2.0!
+    print(h.get(TYPE_UMA_V2, KEY_UMA_V2_INTROSPECTION_ENDPOINT))
+    # Output: 'https://<domain>/<path>/introspection'
 
 if __name__ == "__main__":
     main()
