@@ -50,6 +50,7 @@ This library is created to support EOEPCA's project, but is generic enough to be
 Currently supported endpoints (easily expandable!):
   - OIDC
   - SCIM
+  - UMA (2.0)
 
 ### Built With
 
